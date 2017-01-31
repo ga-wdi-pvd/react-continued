@@ -1,4 +1,4 @@
-# React: Practice, Paradigms and Principles
+# React: Practice, Paradigms, and Principles
 
 ---
 
@@ -8,12 +8,12 @@
 * Explain how React incorporates principles of Functional Programming
 * Identify state in a React app
 * Define the role of Container components and when to use them
-* Use jQuery to make AJAX calls in a React app
-* Explain the ways to add styles to a React app
+* Use jQuery to make AJAX calls in a React app (Bonus)
+* Explain the ways to add styles to a React app (Bonus)
 
 ---
 
-## Framing (20 minutes / 0:20)
+## Framing
 
 In today's class you're going to get practice building a React app that's more complex than the intro's simple blog example. When building an app like this, it's important to keep certain development practices and paradigms in mind so that we write maintainable code.
 
@@ -71,7 +71,7 @@ Because the same input will always produce the same output, components are easil
 
 > If you're interested, [Ava](https://www.npmjs.com/package/ava) is a popular testing library for React.
 
-## State (10 minutes / 0:30)
+## State
 
 So why do we follow all these principles? If not, it is easy to lose control of our application's state.
 
@@ -102,7 +102,7 @@ Let's think of states in terms of a game: Pokémon.
 
 </details>
 
-It's easy to think about this in terms of a game, because there is a clear idea of a beginning, end and states that reflect progress in between. You can attribute very specific data to all of these states.
+It's easy to think about this in terms of a game, because there is a clear idea of a beginning, end, and states that reflect progress in between. You can attribute very specific data to all of these states.
 
 <details>
   <summary><strong>Q: So we know an application can have different states. But how do we transition in between them?</strong></summary>
@@ -119,7 +119,7 @@ Let's look at the process of a rendering a React Component...
 
 ---
 
-## Break (10 minutes / 0:50)
+## Break
 
 ---
 
@@ -131,7 +131,7 @@ The desired outcome is for you to take a look at the solution and from there dev
 
 ---
 
-### You Do: Map Out React OMDB (10 minutes / 1:00)
+### You Do: Map Out React OMDB
 
 > 5 minutes set-up and exercise. 5 minutes review.
 
@@ -154,12 +154,12 @@ Spend two minutes playing with the application. As you're doing that, make note 
 
 ---
 
-#### Step 1: [Set up a `HelloWorld` Component](https://github.com/ga-wdi-exercises/react-omdb/commit/0024bef69f88dd9a5e086762a151b6063ecdf511) (5 minutes / 1:25)
+#### Step 1: [Set up a `HelloWorld` Component](https://github.com/ga-wdi-exercises/react-omdb/commit/0024bef69f88dd9a5e086762a151b6063ecdf511)
 
 To kick things off, let's add a `HelloWorld` component to make sure things are all wired together.
 
 **Actions**:
-- Fork and clone this [the exercise](https://github.com/ga-wdi-exercises/react-omdb/), then run `$ npm i` from the root project directory
+- From the `react-omdb` directory, checkout to `master`
 - In your `/src` directory, configure your `App.js` and `index.js` files to render a `HelloWorld` component
 - Run `npm start` and make sure everything is working
 
@@ -202,7 +202,7 @@ To kick things off, let's add a `HelloWorld` component to make sure things are a
 
 ---
 
-#### Step 2: [Adds Home UI](https://github.com/ga-wdi-exercises/react-omdb/commit/13a6ae733e45a9ac8bfacc10978f531b68b653c6) (5 minutes / 1:30)
+#### Step 2: [Adds Home UI](https://github.com/ga-wdi-exercises/react-omdb/commit/13a6ae733e45a9ac8bfacc10978f531b68b653c6)
 
 Great, now that we know React is working, let's refactor that HelloWorld component to serve as our app's Home component.
 
@@ -229,7 +229,7 @@ Great, now that we know React is working, let's refactor that HelloWorld compone
 
 ---
 
-#### Step 3: [Adds Search UI](https://github.com/ga-wdi-exercises/react-omdb/commit/1161c0c3eba93e036261c96288c75b1cf9ddf476) (20 minutes / 1:50)
+#### Step 3: [Adds Search UI](https://github.com/ga-wdi-exercises/react-omdb/commit/1161c0c3eba93e036261c96288c75b1cf9ddf476)
 
 > Here are some other commits demonstrating how we can complete this part in three steps...
 >
@@ -251,7 +251,7 @@ First...
 
 Then...
 - Define your `Search` component's initial state. It should have a `query` value that corresponds to a search term.
-- Define a function that is triggered whenever the user submits the Search form. Start by just logging `"clicked!"` to make sure it works.
+- Define a function that is triggered whenever the user submits the Search form. Start by just logging `submitted` to make sure it works.
   - Use an event listener to attach this function to your form. Try googling `onSubmit`.
 - Define a function that updates your `query` value in state whenever a change is made to the input field. Try googling `onChange`.
 - Update your submit function so that it now logs the `query` value in state.
@@ -302,7 +302,7 @@ Then...
 
 ---
 
-### Check-in / Break (15 minutes / 2:05)
+### Break
 
 ---
 
@@ -469,7 +469,7 @@ To add the finishing touches to our application, let's take a stab at styling ou
 
 ---
 
-## Closing (10 minutes / 2:30)
+## Closing
 
 - What are some struggles you encountered when building out a more complex React app for the first time?
 - What are some good rules of thumb to help keep components maintainable?
@@ -478,6 +478,7 @@ To add the finishing touches to our application, let's take a stab at styling ou
 
 ## Resources
 
+* [GA DC Lesson](https://github.com/ga-wdi-lessons/react-continued)
 * [Imperative vs. Declarative Javascript](http://www.tysoncadenhead.com/blog/the-state-of-javascript-a-shift-from-imperative-to-declarative#.VxgGxZMrKfQ)
 * [Styling in React](http://survivejs.com/webpack_react/styling_react/)
 * [ReactJS Fundamentals Course](http://courses.reactjsprogram.com/courses/reactjsfundamentals)
